@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 The AwakenOS Project
+# Copyright (C) 2024 The RisingOS Android Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,13 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from tundra device
 $(call inherit-product, device/motorola/tundra/device.mk)
 
-# Inherit common PixelOS configurations
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit common lineage configurations
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := aosp_tundra
+PRODUCT_NAME := lineage_tundra
 PRODUCT_DEVICE := tundra
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
