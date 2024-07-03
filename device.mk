@@ -33,6 +33,8 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libreverbwrapper \
     libvisualizer \
+    libvolumelistener \
+    libstagefright_softomx_plugin.vendor
 
 PRODUCT_PACKAGES += \
     audioadsprpcd \
@@ -119,6 +121,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
     frameworks/native/data/etc/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
@@ -150,7 +156,8 @@ PRODUCT_COPY_FILES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
-    android.hardware.drm-service.clearkey
+    android.hardware.drm-service.clearkey \
+    libhidlmemory.vendor
 
 # Enable project quotas and casefolding for emulated storage without sdcardfs
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
@@ -187,7 +194,8 @@ PRODUCT_COPY_FILES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0.vendor
+    android.hardware.gatekeeper@1.0.vendor \
+    libion.vendor
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -381,13 +389,19 @@ PRODUCT_PACKAGES += \
     libqsap_sdk \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
-    librmnetctl
+    librmnetctl \
+    libsysutils.vendor \
+    android.system.net.netd@1.1.vendor \
+    android.hardware.secure_element@1.0.vendor:64 \
+    libsqlite.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.multihal \
     sensors.tundra \
-    vendor.qti.hardware.display.mapper@1.1.vendor
+    vendor.qti.hardware.display.mapper@1.1.vendor \
+    android.hardware.sensors@1.0-service \
+    libpower.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
