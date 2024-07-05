@@ -1,13 +1,13 @@
 #
-# Copyright (C) 2024 The RisingOS Android Project
+# Copyright (C) 2024 Project-Infinity-X
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_tundra.mk
+    $(LOCAL_DIR)/infinity_tundra.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_tundra-user \
-    lineage_tundra-userdebug \
-    lineage_tundra-eng
+    infinity_tundra-user \
+    infinity_tundra-userdebug \
+    infinity_tundra-eng

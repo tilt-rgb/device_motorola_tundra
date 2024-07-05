@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2024 The RisingOS Android Project
+# Copyright (C) 2024 Project-Infinity-X
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,8 +11,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from tundra device
 $(call inherit-product, device/motorola/tundra/device.mk)
 
-# Inherit common lineage configurations
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit common infinity configurations
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -30,3 +30,24 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := motorola/tundra_g/tundra:11/T1SJS33.117-30-3-8/bf62b:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
+# Device Status
+INFINITY_BUILD_TYPE := OFFICIAL
+
+# Maintainer Name
+INFINITY_MAINTAINER := "Shivam_Ingale"
+
+# Whether the package supports BLURS
+TARGET_SUPPORTS_BLUR := true
+
+# Gapps:
+WITH_GAPPS := true
+
+# Whether the compiled shipped gapps package uses Google Dialer, Messaging, Contacts:
+TARGET_BUILD_GOOGLE_TELEPHONY := true
+
+# ViMusic
+TARGET_BUILD_VIMUSIC := true
+
+# Moto Calculator
+USE_MOTO_CALCULATOR := true
