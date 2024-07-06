@@ -17,7 +17,7 @@ $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := lineage_tundra
+PRODUCT_NAME := infinity_tundra
 PRODUCT_DEVICE := tundra
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
