@@ -111,7 +111,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.postproc@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    libgui_shim_vendor
+    libgui_shim_vendor \
     libcamera_metadata.vendor \
     libexif.vendor \
     libyuv.vendor \
