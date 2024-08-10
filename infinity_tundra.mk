@@ -51,3 +51,6 @@ TARGET_BUILD_VIMUSIC := true
 
 # Moto Calculator
 USE_MOTO_CALCULATOR := true
+
+# UDFPS
+TARGET_HAS_UDFPS := true
