@@ -50,15 +50,12 @@
     </effects>
     <postprocess>
         <stream type="music">
-            <apply effect="music_helper"/>
             <apply effect="dlb_music_listener"/>
         </stream>
         <stream type="ring">
-            <apply effect="ring_helper"/>
             <apply effect="dlb_ring_listener"/>
         </stream>
         <stream type="alarm">
-            <apply effect="ring_helper"/>
             <apply effect="dlb_alarm_listener"/>
         </stream>
         <stream type="voice_call">
@@ -68,7 +65,6 @@
             <apply effect="dlb_system_listener"/>
         </stream>
         <stream type="notification">
-            <apply effect="notification_helper"/>
             <apply effect="dlb_notification_listener"/>
         </stream>
     </postprocess>
